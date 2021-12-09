@@ -135,6 +135,6 @@ span:hover {
 
 @media only screen and (max-width: 400px) {
   .cardContainer {
-    height: 60;
+    height: 60vh;
   }
 }
