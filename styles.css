@@ -132,3 +132,9 @@ span {
 span:hover {
   color: hsl(178, 100%, 50%);
 }
+
+@media only screen and (max-width: 400px) {
+  .cardContainer {
+    height: 60;
+  }
+}
