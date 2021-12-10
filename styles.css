@@ -16,9 +16,10 @@ body {
   align-items: center;
 }
 .cardContainer {
-  width: 75%;
+  width: 80%;
   height: 67vh;
-  max-width: 300px;
+  max-width: 290px;
+  max-height: 470px;
   background-color: hsl(216, 50%, 16%);
   border-radius: 15px;
   box-shadow: -8px 10px 30px 1px rgba(0, 0, 0, 0.49);
@@ -33,24 +34,50 @@ body {
   height: 93%;
 }
 .imageSection {
+  display: grid;
+  place-items: center;
   width: 100%;
   height: 55%;
   border-radius: 16px;
-  background-color: hsl(178, 100%, 50%);
+  background-image: url(./images/image-equilibrium.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-#heroImg {
+
+.view {
+  position: relative;
+  display: grid;
+  place-items: center;
+  opacity: 0;
   width: 100%;
   height: 100%;
-  border-radius: 15px;
-  transition: ease-in-out 0.5s;
+  border-radius: 16px;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
-#heroImg:hover {
-  opacity: 0.7;
+.view:hover {
+  opacity: 1;
 }
+.view:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.4;
+}
+
+#viewIcon {
+  cursor: pointer;
+  z-index: 1;
+}
+
 .infoSection {
   width: 100%;
-  height: 40%;
   margin-top: 20px;
 }
 .info {
@@ -133,8 +160,8 @@ span:hover {
   color: hsl(178, 100%, 50%);
 }
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
   .cardContainer {
     max-height: 60vh;
   }
-}
+} */
