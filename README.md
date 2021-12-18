@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://github.com/codenay/nft-preview-card-component-main.git)
-- Live Site URL: [live site URL](https://codenay.github.io/order-summary-component-main/)
+- Live Site URL: [live site URL](https://codenay.github.io/nft-preview-card-component-main/)
 
 ## My process
 
